@@ -1,10 +1,8 @@
 import os
-from dotenv import load_dotenv
 import discord
 from discord.ext import commands
 
-load_dotenv()  # загружаем .env
-
+# os.getenv() напрямую получает переменную из настроек Render
 TOKEN = os.getenv("DISCORD_TOKEN")
 
 intents = discord.Intents.default()
